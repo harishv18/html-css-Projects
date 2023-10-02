@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100&family=Raleway&family=Rubik&display=swap');
+
+:root {
+  --blank: #0C3C60;
+  --white: #fff;
+  --black: #000;
+  --gray: gray;
+  --footer: #072136;
+  --lightgray: #F7F7F7;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  /* transition: ease-in-out 0.1s; */
+}
+.header {
+  background-color: var(--blank);
+  height: 20px;
+  padding: 20px 60px;
+}
+.header > h3 {
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  float: left;
+}
+.header > nav > ul {
+  list-style-type: none;
+  float: right;
+}
+.header > nav > ul > li {
+  display: inline-block;
+  color: var(--white);
+  font-family: 'Rubik',sans-serif;
+}
+.header > nav > ul > li > a{
+  color: var(--white);
+  text-decoration: none;
+  padding: 20px;
+}
+.header > nav > ul > li:hover a {
+  background-color: var(--white);
+  color: var(--black);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+.banner {
+  background-image: url(../../assests/images/banner.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.banner > div {
+  background-color: #fff;
+  color: #000;
+  width: 600px;
+  height: 300px;
+  align-self: flex-end;
+}
+.banner > div > .para1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.banner > div > .para2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+}
+.banner > div > button {
+  width: 160px;
+  padding: 20px;
+  margin: 20px 200px;
+  background-color: var(--white);
+}
+.banner > div > button:hover {
+  background-color: var(--blank);
+  color: var(--white);
+}
+.card {
+  margin: 100px 70px 0px;
+}
+.services {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+.services:hover {
+  background-color: var(--lightgray);
+}
+.services > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.services > p {
+  line-height: 2;
+  text-align: justify;
+}
+.projects {
+  flex: 1;
+  padding: 50px;
+}
+.projects:hover {
+  background-color: var(--lightgray);
+}
+.projects > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.projects > p {
+  line-height: 2;
+  text-align: justify;
+}
+.clients {
+  flex: 1;
+  padding: 50px;
+}
+.clients:hover {
+  background-color: var(--lightgray);
+}
+.clients > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.clients > p {
+  line-height: 2;
+  text-align: justify;
+}
+.services > button {
+  width: 100px;
+  padding: 20px;
+  margin: 30px 100px;
+  background-color: var(--white);
+}
+.services > button:hover {
+  background-color: var(--blank);
+  color: var(--white);
+}
+.clients > button {
+  width: 100px;
+  padding: 20px;
+  margin: 30px 100px;
+  background-color: var(--white);
+}
+.clients > button:hover {
+  background-color: var(--blank);
+  color: var(--white);
+}
+.projects > button {
+  width: 100px;
+  padding: 20px;
+  margin: 30px 100px;
+  background-color: var(--white);
+}
+.projects > button:hover {
+  background-color: var(--blank);
+  color: var(--white);
+}
+.about-us {
+  margin-top: 50px;
+  background-image: url(../../assests/images/content.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  /* position: absolute; */
+}
+.about-us > h1 {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 35px;
+}
+.about-us > p {
+  text-align: justify;
+  padding: 50px 100px 0px 100px;
+  line-height: 2;
+}
+.about-us > button {
+  width: 130px;
+  height: 50px;
+  padding: 20px;
+  margin: 60px 700px;
+  background-color: transparent;
+}
+.about-us > button:hover {
+  background-color: var(--blank);
+  color: var(--white);
+}
+
+.our-clients {
+  background-color: var(--white);
+  width: 100%;
+  margin: 70px 0px;
+}
+.our-clients > h1 {
+  text-align: center;
+  font-size: 35px;
+}
+.our-clients > [class*="fa"] {
+  color: gray;
+  height: 80px;
+  padding: 50px 140px 0px 140px;
+}
+.our-clients > [class*="fa"]:hover {
+  color: var(--blank);
+  transform: scale(1.2);
+}
+.testimonials {
+  background-color: var(--lightgray);
+  /* width: 100%; */
+  height: 200px;
+  padding: 100px 100px 50px 100px;
+}
+.testimonials > h1 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+.testimonials > p {
+  text-align: justify;
+  line-height: 2;
+}
+.testimonials  h4 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.contact {
+  height: 600px;
+  background-color: var(--blank);
+}
+.contact h1 {
+  color: var(--white);
+  font-size: 35px;
+  text-align: center;
+  padding: 50px;
+}
+.contact > div > label {
+  color: var(--white);
+  padding: 0px 0px 200px 0px;
+  
+}
+.contact > div > .l1 {
+  margin-bottom: 100px;
+}
+.contact input {
+  width: 650px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: var(--blank);
+  margin-top: 10px;
+  outline: none;
+  padding: 5px;
+  
+}
+.contact > div {
+  padding: 0px 0px 0px 100px;
+  float: left;
+}
+.contact input:focus {
+  background-color: var(--white);
+  visibility: visible;
+}
+
+.contact > .div2  {
+  float: left;
+  margin-left: 0px;
+  padding-left: 50px;
+}
+.contact > .div2 > textarea {
+  width: 650px;
+  height: 210px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: var(--blank);
+  outline: none;
+  padding: 5px;
+}
+.contact textarea:focus {
+  background-color: var(--white);
+  visibility: visible;
+}
+.contact button {
+  width: 630px;
+  height: 50px;
+  margin-top: 30px;
+}
+.contact button:hover {
+  border-color: var(--white);
+  background-color: var(--blank);
+  color: var(--white);
+}
+footer {
+  height: 200px;
+  background-color: var(--footer);
+  color: var(--white);
+}
+footer > p {
+  text-align: center;
+  padding: 90px 0px;
+}
